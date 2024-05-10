@@ -1,10 +1,10 @@
-def filter(arr, bajanord): #veradarcnel bolor zuyq elementnere voronq bajanvumen bajanordi vrya
+def filter(arr, bajanord): #veradarcnel bolor zuyq elementnere voronq bajanvumen bajanordi vrya - Anahit
     return [10, 20]
 
-def sort(arr): #veradarcnel sortavorac list
+def sort(arr): #veradarcnel sortavorac list - Murad
     return arr
 
-def isValid(arr, expectedStr): #stugel ardzyok trvac tveri liste hamapatasxanume aknkalvox patasxanin
+def isValid(arr, expectedStr): #stugel ardzyok trvac tveri liste hamapatasxanume aknkalvox patasxanin - Artur
     return False
 
 a = [2, 3, 10, 7, 6, 15, 20]
