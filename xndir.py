@@ -17,6 +17,9 @@ def filter(arr: list[int], divisor: int) -> list[int]:
 
     return res
 
+def testFilter():
+    print('test filter')
+
 def sort(arr): #veradarcnel sortavorac list - Murad
     arr = a
     for num in range(len(arr)-1, 0, -1):
@@ -25,7 +28,8 @@ def sort(arr): #veradarcnel sortavorac list - Murad
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
     return arr
 
-
+def testSort():
+    print('test sort')
 
 def isValid(arr, expectedStr): #stugel ardzyok trvac tveri liste hamapatasxanume aknkalvox patasxanin - Artur
     expectedArr = expectedStr.split(',')
@@ -35,23 +39,22 @@ def isValid(arr, expectedStr): #stugel ardzyok trvac tveri liste hamapatasxanume
     
     return True
 
-# print('Testing IsValid with arr = [1,2,3], expectedStr = 1,2,3...')
-# if isValid([1,2,3], '1,2,3'):
-#     print('Test passed!')
-# else:
-#     print('Test failed!')
-
-# print('Testing IsValid with arr = [2,4,6], expectedStr = 1,2,3...')
-# if isValid([2,4,6], '1,2,3'):
-#     print('Test failed!')
-# else:
-#     print('Test passed!')
-
-# print('Testing IsValid with arr = [2,3,4], expectedStr = 2,3,4...')
-# if isValid([2,3,4], '2,3,4'):
-#     print('Test passed!')
-# else:
-#     print('Test failed!')
+def testIsValid()
+    print('Testing IsValid with arr = [1,2,3], expectedStr = 1,2,3...')
+    if isValid([1,2,3], '1,2,3'):
+        print('Test passed!')
+    else:
+        print('Test failed!')
+    print('Testing IsValid with arr = [2,4,6], expectedStr = 1,2,3...')
+    if isValid([2,4,6], '1,2,3'):
+        print('Test failed!')
+    else:
+        print('Test passed!')
+    print('Testing IsValid with arr = [2,3,4], expectedStr = 2,3,4...')
+    if isValid([2,3,4], '2,3,4'):
+        print('Test passed!')
+    else:
+        print('Test failed!')
 
 
 
