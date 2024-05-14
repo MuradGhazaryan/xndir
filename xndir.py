@@ -21,7 +21,6 @@ def testFilter():
     print('test filter')
 
 def sort(arr): #veradarcnel sortavorac list - Murad
-    arr = a
     for num in range(len(arr)-1, 0, -1):
         for i in range(num):
             if arr[i] > arr[i + 1]:
@@ -29,7 +28,33 @@ def sort(arr): #veradarcnel sortavorac list - Murad
     return arr
 
 def testSort():
-    print('test sort')
+    print('Testing sort with arr = [2, 3, 10, 7, 6, 15, 20] ...')
+    arr1 = [2, 3, 10, 7, 6, 15, 20]
+    expected1 = [2, 3, 6, 7, 10, 15, 20]
+    sorted_arr1 = sort(arr1)
+    if sorted_arr1 == expected1:
+        print('Test 1 passed!')
+    else:
+        print('Test 1 failed!')
+
+    print('Testing sort with arr = [] ...')
+    arr2 = []
+    expected2 = []
+    sorted_arr2 = sort(arr2)
+    if sorted_arr2 == expected2:
+        print('Test 2 passed!')
+    else:
+        print('Test 2 failed!')
+
+    print('Testing sort with arr = [8] ...')
+    arr3 = [8]
+    expected3 = [8]
+    sorted_arr3 = sort(arr3)
+    if sorted_arr3 == expected3:
+        print('Test 3 passed!')
+    else:
+        print('Test 3 failed!')
+
 
 def isValid(arr, expectedStr): #stugel ardzyok trvac tveri liste hamapatasxanume aknkalvox patasxanin - Artur
     expectedArr = expectedStr.split(',')
@@ -39,7 +64,7 @@ def isValid(arr, expectedStr): #stugel ardzyok trvac tveri liste hamapatasxanume
     
     return True
 
-def testIsValid()
+def testIsValid():
     print('Testing IsValid with arr = [1,2,3], expectedStr = 1,2,3...')
     if isValid([1,2,3], '1,2,3'):
         print('Test passed!')
@@ -55,7 +80,6 @@ def testIsValid()
         print('Test passed!')
     else:
         print('Test failed!')
-
 
 
 a = [2, 3, 10, 7, 6, 15, 20]
